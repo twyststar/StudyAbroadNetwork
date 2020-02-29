@@ -131,10 +131,10 @@ a.nav-link:hover {
   top: 0;
 }
 
-.form-group {
+/* .form-group {
   border-bottom: 1px solid red;
 
-}
+} */
 .headerScroll .navbar {
   background-color: #0a3170;
   color: white;
@@ -233,6 +233,11 @@ a.nav-link:hover {
 
 .hideTemp {
   display: none;
+}
+/* Form Overrides */
+.greyedOut {
+  font-size: smaller;
+  color: #aaabad;
 }
 /* Footer */
 

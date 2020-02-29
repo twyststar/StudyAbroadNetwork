@@ -10,7 +10,6 @@
 
   <div class="contentPadded">
     <h2 class="slogan">Pre-Application Form</h2>
-
     <form class="card mailform" action="/contact" method="post">
       <div class="card-body">
         <h3 class="card-title mb-5 mt-3">Your Information</h3>
@@ -26,6 +25,12 @@
           </div>
         </div>
         <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputEmail">Email Address</label>
+            <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="youremail@sample.com">
+          </div>
+        </div>
+        <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputAge">Age</label>
             <input type="number" class="form-control" id="inputAge" placeholder="Age">
@@ -35,68 +40,64 @@
             <input type="grade" class="form-control" id="inputGrade" placeholder="Grade/Year">
           </div>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" name="inputAddress" id="inputAddress" placeholder="1234 Main St">
+        <label for=""> When would you like to start your study abroad?</label>
+        <div class="form-row">
+          
+          <div class="form-group col-md-6">
+          <label for="inputYear">Year</label>
+          <input type="text" class="form-control" name="inputYear" id="inputAddress" placeholder="">
         </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        <div class="form-group col-md-6">
+          <label for="inputMonth">Month</label>
+          <input type="text" class="form-control" id="inputMonth" placeholder="">
+        </div>
+        </div>
+        <label for="studyLength">How long would you like to study abroad?</label>
+        <div class="form-row border rounded">
+          <div class="form-group w-100">
+            <div class="form-check form-check-inline mt-3">
+              <div class="checkbox">
+                <label><input type="checkbox" value="radioYear">   Year</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="radioSemester">   Semester</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="radioShortTerm">   Short Term</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="radioSummer">   Summer Program</label>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputCity">City</label>
             <input type="text" class="form-control" name="inputCity" id="inputCity">
           </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
+          <div class="form-group col-md-6">
+            <label for="inputCountry">Country</label>
+            <select  id="inputCountry" name="inputCountry" class="form-control bfh-countries" data-country="UK" data-flags="true"></select>
           </div>
         </div>
-        <div class="form-group card">
-          <label for="schoolsSelect">Select the school(s) you are interested in:</label>
-          <div class="form-check form-check-inline">
+        <label for="schoolsSelect">Which country are you interested in?</label>
+        <div class="form-row border rounded">
+          <div class="form-group w-100">
+          <div class="form-check form-check-inline mt-3">
             <div class="checkbox">
-              <label><input type="checkbox" value="">   Option 1</label>
+              <label><input type="checkbox" value="radioCanada">   Canada</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="">   Option 2</label>
+              <label><input type="checkbox" value="radioUS">   United States</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="" disabled>   Option 3</label>
-            </div>
-          </div>
-          <div class="form-check form-check-inline">
-            <div class="checkbox">
-              <label><input type="checkbox" value="">   Option 4</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="">   Option 5</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="" disabled>   Option 6</label>
-            </div>
-          </div>
-          <div class="form-check form-check-inline">
-            <div class="checkbox">
-              <label><input type="checkbox" value="">   Option 7</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="">   Option 8</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="" disabled>   Option 9</label>
+              <label><input type="checkbox" value="radioNZ" disabled> <span class="greyedOut">New Zealand <small>Coming Soon!</<small></span>  </label>
             </div>
           </div>
         </div>
-        <div class="form-group">
+        </div>
+        <div class="form-group mt-4">
           <label for="exampleFormControlTextarea1">Tell us more about yourself!</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="About You"></textarea>
         </div>
