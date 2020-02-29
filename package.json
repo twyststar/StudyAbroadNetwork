@@ -2,10 +2,10 @@
   "name": "StudyAbroadNetwork",
   "version": "1.0.0",
   "description": "Study Abroad Network Website",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server"
+    "start": "nodemon app"
   },
   "author": "Starlynne Start",
   "license": "ISC",
