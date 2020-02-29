@@ -106,7 +106,8 @@ app.post("/contact", (req, res) => {
   main().catch(console.error);
 });
 
-app.listen(3200, () => console.log("server started..."));
+var port = process.env.PORT || 3200;
+app.listen(port, () => console.log("server started..."));
 
 // async..await is not allowed in global scope, must use a wrapper
 
