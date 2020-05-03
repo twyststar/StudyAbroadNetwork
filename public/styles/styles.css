@@ -232,7 +232,7 @@ a.nav-link:hover {
 }
 
 .hideTemp {
-  display: none;
+  display: none !important;
 }
 /* Form Overrides */
 .greyedOut {

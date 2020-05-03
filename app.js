@@ -63,7 +63,6 @@ app.get('/contact', (req, res) => {
   });
 });
 
-//need to handle post here
 app.post("/contact", (req, res) => {
   console.log('in mail function')
   console.log(process.env.MAIL_USER);
