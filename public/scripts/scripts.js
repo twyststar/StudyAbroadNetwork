@@ -11,11 +11,47 @@ $(window).scroll(function() {
   }
 });
 
+if ($('.title-fix-1').length){
+  var fixmeTop = $('.title-fix-1').offset().top;       // get initial position of the element
+  //find original position of element when it becomes visible
+  // when intersecting the header, fix element at 40p from top
+  // when we scroll up past original position, put it back where it was originally
+  // add a close button when visible
+  $(window).scroll(function () {                  // assign scroll event listener
+    var currentScroll = $(window).scrollTop(); 
+    // console.log(currentScroll)
+    // console.log(fixmeTop) // get current position
+    if ($('.title-fix-1').is(":visible")) {
+      var setOriginal = $('.title-fix-1').parent().offset().top;
+      var scrollTop = $(window).scrollTop(),
+        elementOffset = $('.title-fix-1').offset().top,
+        distance = (elementOffset - scrollTop);
+      if(distance <= 40){
+        console.log('hit the header')
+        $('.title-fix-1').css({                      // scroll to that element or below it
+          'position': 'fixed',
+          'top': '40px',
+          //this is where I'll want them to stay on USA 
+          'background-color': 'white',
+          'text-align': 'center',
+          'width': '100%'
+        });
+      }        // apply position: fixed if you
+      if (currentScroll < setOriginal){
+        console.log('scrolled past original position')                                  // apply position: static
+        $('.title-fix-1').css({                      // if you scroll above it
+          position: 'relative'
+        });
+      }
+    }
+  });
+}
 // Learn More accordion button functions
 $(".schoolAccordion").click(function(){
   $(".closeBtn").show();
   $(".accordionShow").hide();
   $(this).parent().next().show();
+  console.log($(this).parent().next().find('.title-fix-1').offset().top + ' inside click')
 })
 
 // Canada Tabbed Content
@@ -74,3 +110,13 @@ if (video_wrapper.length) {
     $(this).html('<iframe width="450" height="300" frameborder="0" allow = "accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="' + url + '"></iframe >');
   });
 }
+
+//Fees table width
+
+  let tableWidth = $(".apisMain").width();
+  $(".apisSecondary").width(tableWidth);
+
+$(window).resize(function(){
+  let tableWidth = $(".apisMain").width();
+  $(".apisSecondary").width(tableWidth);
+})
