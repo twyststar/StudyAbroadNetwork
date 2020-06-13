@@ -218,7 +218,7 @@ a.nav-link:hover {
   font-size: 1.1em;
   color: #0a3170;
   font-weight: bold;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .programsLabel {
@@ -490,22 +490,20 @@ a.nav-link:hover {
 
 /* Close button */
 .closeBtn {
-  /* position: fixed;
-  top: 15%;
-  right: 7.2%; */
   z-index: 1000;
-  
-  /* display: none; */
-  color: #0a3170;
+  font-family: LeagueSpartan;
   border: none;
-  border-radius: 50%;
+  background-color:#e9ecef;
+  color: #0a3170;
+  margin-bottom: 1%;
 }
 .closeBtn:hover {
-
-  background-color:#1252b8;
+  background-color:#0a3170;
   color: white;
 }
-
+.title-fix-1 {
+  text-align: center;
+}
 /* Style the tab content */
 .tabcontent,
 .tabcontent2 {

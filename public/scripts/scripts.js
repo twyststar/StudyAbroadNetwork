@@ -30,7 +30,9 @@ if ($('.title-fix-1').length){
         console.log('hit the header')
         $('.title-fix-1').css({                      // scroll to that element or below it
           'position': 'fixed',
+          'padding-right': '10%',
           'top': '40px',
+          'border-bottom':'1px solid #0a3170',
           //this is where I'll want them to stay on USA 
           'background-color': 'white',
           'text-align': 'center',
@@ -39,16 +41,15 @@ if ($('.title-fix-1').length){
       }        // apply position: fixed if you
       if (currentScroll < setOriginal){
         console.log('scrolled past original position')                                  // apply position: static
-        $('.title-fix-1').css({                      // if you scroll above it
-          position: 'relative'
-        });
+        $('.title-fix-1').attr('style',                     // if you scroll above it
+          'position:relative'
+        );
       }
     }
   });
 }
 // Learn More accordion button functions
 $(".schoolAccordion").click(function(){
-  $(".closeBtn").show();
   $(".accordionShow").hide();
   $(this).parent().next().show();
   console.log($(this).parent().next().find('.title-fix-1').offset().top + ' inside click')
