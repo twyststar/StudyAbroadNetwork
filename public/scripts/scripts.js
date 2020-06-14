@@ -11,8 +11,9 @@ $(window).scroll(function() {
   }
 });
 
-if ($('.title-fix-1').length){
-  var fixmeTop = $('.title-fix-1').offset().top;       // get initial position of the element
+
+var scrollFix = function(fixNode){
+  // var fixmeTop = $('.title-fix-1').offset().top;       // get initial position of the element
   //find original position of element when it becomes visible
   // when intersecting the header, fix element at 40p from top
   // when we scroll up past original position, put it back where it was originally
@@ -22,13 +23,13 @@ if ($('.title-fix-1').length){
     // console.log(currentScroll)
     // console.log(fixmeTop) // get current position
     if ($('.title-fix-1').is(":visible")) {
-      var setOriginal = $('.title-fix-1').parent().offset().top;
+      var setOriginal = $(fixNode).parent().offset().top;
       var scrollTop = $(window).scrollTop(),
-        elementOffset = $('.title-fix-1').offset().top,
+        elementOffset = $(fixNode).offset().top,
         distance = (elementOffset - scrollTop);
       if(distance <= 40){
         console.log('hit the header')
-        $('.title-fix-1').css({                      // scroll to that element or below it
+        $(fixNode).css({                      // scroll to that element or below it
           'position': 'fixed',
           'padding-right': '10%',
           'top': '40px',
@@ -38,21 +39,24 @@ if ($('.title-fix-1').length){
           'text-align': 'center',
           'width': '100%'
         });
-      }        // apply position: fixed if you
+      }      // apply position: fixed if you
       if (currentScroll < setOriginal){
-        console.log('scrolled past original position')                                  // apply position: static
-        $('.title-fix-1').attr('style',                     // if you scroll above it
+        console.log('scrolled past original position')                                  // apply position: relative
+        $(fixNode).attr('style',                     // if you scroll above it
           'position:relative'
         );
       }
     }
   });
 }
+
+
 // Learn More accordion button functions
 $(".schoolAccordion").click(function(){
   $(".accordionShow").hide();
   $(this).parent().next().show();
-  console.log($(this).parent().next().find('.title-fix-1').offset().top + ' inside click')
+  scrollFix($(this).parent().next().find('.title-fix-1'))
+  console.log($(this).parent().next().find('.title-fix-1').offset().top + ' inside click') // need to pass the position here? ? 
 })
 
 // Canada Tabbed Content
@@ -96,6 +100,7 @@ function openSubArea(evt, areaName) {
 
 $(".closeBtn").click(function(){
   $(".accordionShow").hide();
+  $(window).off('scroll');
 })
 
 //Load and play videos on click instead of on page load
