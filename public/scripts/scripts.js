@@ -34,6 +34,7 @@ var scrollFix = function(fixNode){
       if(distance <= 100){
         console.log('hit the header')
         $(fixNode).css({                      // scroll to that element or below it
+          
           'position': 'fixed',
           'padding-right': '10%',
           'top': '40px',
