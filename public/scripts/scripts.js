@@ -22,12 +22,16 @@ var scrollFix = function(fixNode){
     var currentScroll = $(window).scrollTop(); 
     // console.log(currentScroll)
     // console.log(fixmeTop) // get current position
-    if ($('.title-fix-1').is(":visible")) {
+    // if ($('.title-fix-1').is(":visible")) {
       var setOriginal = $(fixNode).parent().offset().top;
       var scrollTop = $(window).scrollTop(),
         elementOffset = $(fixNode).offset().top,
         distance = (elementOffset - scrollTop);
-      if(distance <= 40){
+        console.log('scroll top = ' + scrollTop)
+        console.log("Element Offset = " + elementOffset)
+        console.log("Distance = " + distance)
+    console.log('distance is < 100 = ' + (distance <= 100))
+      if(distance <= 100){
         console.log('hit the header')
         $(fixNode).css({                      // scroll to that element or below it
           'position': 'fixed',
@@ -45,7 +49,7 @@ var scrollFix = function(fixNode){
         $(fixNode).attr('style',                     // if you scroll above it
           'position:relative'
         );
-      }
+      
     }
   });
 }
