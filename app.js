@@ -67,7 +67,7 @@ app.post("/contact", (req, res) => {
   console.log('in mail function')
   console.log(process.env.MAIL_USER);
   console.log(req.body);
-  res.send("Success!   ");
+  res.send("Success!   \n" + JSON.stringify(req.body));
   async function main() {
     // Generate test SMTP service account from ethereal.email
     // Only needed if you don't have a real mail account for testing

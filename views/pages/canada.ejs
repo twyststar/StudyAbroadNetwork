@@ -62,7 +62,6 @@
       <button class="tablinks" onclick="openArea(event, 'Newfoundland')">Newfoundland</button>
       <button class="tablinks" onclick="openArea(event, 'NewBrunswick')">New Brunswick</button>
     </div>
-<!--a href="#tabNavigation" class="closeBtn"><i class="fa fa-times-circle fa-3x"></i></!--a>
 <!-- BC Tab content -->
     <div id="BritishColumbia" class="tabcontent">
       <h2 class="slogan">British Columbia Schools</h2>
@@ -92,6 +91,11 @@
           <!-- Initially hidden info -->
             <p class="text-center mt-5"><button class="schoolAccordion">Learn More</button></p>
             <div class="accordionShow">
+              <div class="title-fix-1">
+                <p class="schoolTitle text-center"><em>Gulf Islands International</em></p>
+                    <p class="text-center"><em>Location: Vancouver Island</em></p>
+                <button class="closeBtn" type="">Close X</button>
+              </div>
               <div class="flex-half">
                 <div>
                   <p><em>The commitment to cultural diversity has resulted in the creation of four distinct programs that are designed to
@@ -4448,5 +4452,6 @@
 <% include ../partials/footer %>
 
 <script src="scripts/scripts.js"></script>
+<script src="scripts/canada-scripts.js"></script>
 </body>
 </html>
