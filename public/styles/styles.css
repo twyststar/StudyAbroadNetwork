@@ -172,17 +172,18 @@ a.nav-link:hover {
 }
 
 .fas.fa-bars:hover {
-  color: #eac554;
+  /* color: #eac554; */
+  color: white;
 }
 
 .headerScroll .navbar-nav .nav-link:hover {
-  color: #eac554;
+  color: white;
 }
 
 .headerScroll .navbar-nav .nav-item .dropdown-item:hover {
   text-decoration: underline;
   background-color: #0a3170;
-  color: #eac554;
+  color: white;
 }
 
 .flex-half {

@@ -26,12 +26,12 @@
           <li class="nav-item">
             <a class="nav-link <% if (page_title === 'agents') { %>active <% } %>" href="agents">Agents</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown <% if (page_title === 'canada' || page_title === 'usa' || page_title === "nz") { %>active <% } %>">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Locations
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu dropdown-menu-right " aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item <% if (page_title === 'canada') { %>active <% } %>" href="canada">Canada</a>
               <a class="dropdown-item <% if (page_title === 'nz') { %>active <% } %>" href="nz">New Zealand</a>
               <a class=" dropdown-item <% if (page_title === 'usa') { %>active <% } %>" href="usa">United States</a>
@@ -54,30 +54,33 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link active" href="#top">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link <% if (page_title === 'home') { %>active <% } %>" href="index">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about">About</a>
+            <a class="nav-link <% if (page_title === 'about') { %>active <% } %>" href="about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact">Contact Us!</a>
+            <a class="nav-link <% if (page_title === 'contact') { %>active <% } %>" href="contact">Contact Us!</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="fees">Fees</a>
+            <a class="nav-link <% if (page_title === 'fees') { %>active <% } %>" href="fees">Fees</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="agents">Agents</a>
+            <a class="nav-link" <% if (page_title === 'agents') { %>active <% } %>href="agents">Agents</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          <li class="nav-item dropdown <% if (page_title === 'canada' || page_title === 'usa' || page_title === "nz") { %>active <% } %>">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Locations
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="canada">Canada</a>
-              <a class="dropdown-item" href="nz">New Zealand</a>
-              <a class=" dropdown-item" href="usa">United States</a>
+              <a class="dropdown-item <% if (page_title === 'canada') { %>active <% } %>" href="canada">Canada</a>
+              <a class="dropdown-item <% if (page_title === 'nz') { %>active <% } %>" href="nz">New Zealand</a>
+              <a class=" dropdown-item <% if (page_title === 'usa') { %>active <% } %>" href="usa">United States</a>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smallNav" href="#top">Top</a>
           </li>
         </ul>
       </div>
