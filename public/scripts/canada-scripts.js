@@ -3,7 +3,7 @@ var scrollFix = function(fixNode){
   // when intersecting the header, fix element at 40p from top
   // when we scroll up past original position, put it back where it was originally
   // add a close button when visible
-  $(window).scroll(function () { 
+  $(window).on("scroll.fixMe", function () { 
     var currentScroll = $(window).scrollTop(); 
     var setOriginal = $(fixNode).parent().offset().top;
     var scrollTop = $(window).scrollTop(),

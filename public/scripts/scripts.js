@@ -62,7 +62,7 @@ function openSubArea(evt, areaName) {
 
 $(".closeBtn").click(function(){
   $(".accordionShow").hide();
-  $(window).off('scroll');
+  $(window).off('scroll.fixMe');
 })
 
 //Load and play videos on click instead of on page load
