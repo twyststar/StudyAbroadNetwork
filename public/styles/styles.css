@@ -580,3 +580,28 @@ a.nav-link:hover {
 }
 }
 
+
+
+#confirm {
+  display: none;
+  background-color: #0a3170;
+  color: white;
+  border: 1px solid #0a3170;
+  position: fixed;
+  width: 60%;
+  height: 35%;
+  left: 22%;
+  top: 20%;
+  box-sizing: border-box;
+  text-align: center;
+}
+#confirm button {
+  border: 1px solid white;
+}
+
+#confirm button a{
+  color: white;
+}
+/* #confirm .message {
+  text-align: left;
+} */

@@ -92,7 +92,7 @@
         <div class="form-row border rounded">
           <div class="form-group w-100">
             <div class="form-check form-check-inline mt-3" id="inputDuration">
-              <div class="checkbox" required="true" >
+              <div class="checkbox">
                 <label><input type="checkbox" name="inputDuration" value="Year">   Year</label>
               </div>
               <div class="checkbox">
@@ -113,10 +113,10 @@
           <div class="form-group w-100">
           <div class="form-check form-check-inline mt-3" >
             <div class="checkbox" >
-              <label><input type="checkbox" name="countrySelectionInput" value="Canada" required="true">   Canada</label>
+              <label><input type="checkbox" name="countrySelectionInput" value="Canada">   Canada</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" name="countrySelectionInput" value="US" required="true">   United States</label>
+              <label><input type="checkbox" name="countrySelectionInput" value="US">   United States</label>
             </div>
             <div class="checkbox">
               <label><input type="checkbox" name="countrySelectionInput" value="NZ" disabled> <span class="greyedOut">New Zealand <small>Coming Soon!</<small></span>  </label>
@@ -135,7 +135,19 @@
       </div>
     </form>
   </div>
+  <div id="confirm">
+    <h2>Thank You!</h2>
+    <p class="message">Your form was submitted sucessfully!</p>
+    <br>
+    <p>We'll be in touch soon!</p>
+    <br>
+    <p>You will be automatically redirected to the home page unless you select another link below</p>
+    <button class="btn btn-primary"><a href='canada'>Canada</a></button>
+    <button class="btn btn-primary"><a href='usa'>USA</a></button>
+    <button class="btn btn-primary"><a href='about'>About Us</a></button>
+ </div>
   <% include ../partials/footer %>
   <script src="scripts/scripts.js"></script>
+  <script src="scripts/contact-scripts.js"></script>
 </body>
 </html>

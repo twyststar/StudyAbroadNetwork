@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const nodemailer = require('nodemailer');
 const path = require('path');
-const mailer = require('./public/scripts/mail-functions.js')
+const mailer = require('./helpers/mail-functions.js')
 
 var app = express();
 
@@ -65,14 +65,15 @@ app.get('/contact', (req, res) => {
 });
 
 app.post("/contact", (req, res) => {
-  console.log('in mail route')
-  console.log(process.env.MAIL_USER);
-  console.log(req.body);
   mailer.buildMail(req.body).then(function(err, reply){
     if(err){
       console.log("Error in post send to mailer: " + err)
     } else {
-      res.send("Success!   \n" + reply);
+      setTimeout(function(){
+        res.render('pages/index',{
+          page_title: 'index'
+        })
+      }, 10000)
     }
   })
 });
