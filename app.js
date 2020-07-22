@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const nodemailer = require('nodemailer');
 const path = require('path');
+const mailer = require('./public/scripts/mail-functions.js')
 
 var app = express();
 
@@ -64,45 +65,16 @@ app.get('/contact', (req, res) => {
 });
 
 app.post("/contact", (req, res) => {
-  console.log('in mail function')
+  console.log('in mail route')
   console.log(process.env.MAIL_USER);
   console.log(req.body);
-  res.send("Success!   \n" + JSON.stringify(req.body));
-  async function main() {
-    // Generate test SMTP service account from ethereal.email
-    // Only needed if you don't have a real mail account for testing
-    // let testAccount = await nodemailer.createTestAccount();
-
-    // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false, // true for 465, false for other ports
-      auth: {
-        user: process.env.MAIL_USER,
-        pass: process.env.MAIL_PASS
-      }
-    });
-
-    // send mail with defined transport object
-    let info = await transporter.sendMail({
-      rejectUnauthorized:false,
-      from: "studyabroaddevelopment@gmail.com", // sender address
-      to: "studyabroaddevelopment@gmail.com", // list of receivers
-      subject: req.body.inputAddress, // Subject line
-      text: "Test Text", // plain text body
-      html: "<b> Testing html with input city: " + req.body.inputCity + "</b>" // html body
-    });
-
-    console.log("Message sent: %s", info.messageId);
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-    // Preview only available when sending through an Ethereal account
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-  }
-
-  main().catch(console.error);
+  mailer.buildMail(req.body).then(function(err, reply){
+    if(err){
+      console.log("Error in post send to mailer: " + err)
+    } else {
+      res.send("Success!   \n" + reply);
+    }
+  })
 });
 
 var port = process.env.PORT || 3200;

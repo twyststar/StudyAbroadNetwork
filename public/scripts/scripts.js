@@ -99,6 +99,9 @@ $(window).resize(function(){
 //   }
 // })  
 
+// $(".mailform").on('submit', function(data){
+//   console.log(data)
+// })
 
   window.addEventListener('load', function() {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -112,7 +115,6 @@ $(window).resize(function(){
         }
         form.classList.add('was-validated');
         console.log('valid form')
-        //action="/contact" method="post" 
       }, false);
     });
   }, false);

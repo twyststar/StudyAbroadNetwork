@@ -10,7 +10,7 @@
 
   <div class="contentPadded">
     <h2 class="slogan">Pre-Application Form</h2>
-    <form class="card mailform needs-validation" novalidate>
+    <form class="card mailform needs-validation" novalidate action="/contact" method="post">
       <div class="card-body">
         <h3 class="card-title mb-5 mt-3">Your Information</h3>
         <h6 class="card-subtitle mb-5 text-muted">* All information is completely confidential and will only be used to help find your perfect school.</h6>
@@ -18,16 +18,25 @@
           <div class="form-group col-md-6">
             <label for="inputFirstName">First Name</label>
             <input type="text" class="form-control" required="true" name="inputFirstName" id="inputFirstName" placeholder="First Name">
+            <div class="invalid-feedback">
+              Please provide your name.
+            </div>
           </div>
           <div class="form-group col-md-6">
             <label for="inputLastName">Last Name</label>
             <input type="text" class="form-control" required="true" name="inputLastName" id="inputLastName" placeholder="Last Name">
+            <div class="invalid-feedback">
+              Please provide your last/family name.
+            </div>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-12">
             <label for="inputEmail">Email Address</label>
             <input type="email" class="form-control" required="true" name="inputEmail" id="inputEmail" placeholder="youremail@sample.com">
+            <div class="invalid-feedback">
+              Please provide a valid email.
+            </div>
           </div>
         </div>
         <div class="form-row">
@@ -35,22 +44,31 @@
             <label for="inputCity">City</label>
             <input type="text" class="form-control" required="true" name="inputCity" id="inputCity">
             <div class="invalid-feedback">
-              Please provide a valid City.
+              Please provide a valid city.
             </div>
           </div>
           <div class="form-group col-md-6">
             <label for="inputCountry">Country</label>
             <select  id="inputCountry" required="true" name="inputCountry" class="form-control bfh-countries" data-country="UK" data-flags="true"></select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputAge">Age</label>
             <input type="number" class="form-control" required="true" name="inputAge" id="inputAge" placeholder="Age">
+            <div class="invalid-feedback">
+              Please provide your age.
+            </div>
           </div>
           <div class="form-group col-md-6">
             <label for="inputGrade">Grade/Year</label>
             <input type="grade" class="form-control" required="true" name="inputGrade" id="inputGrade" placeholder="Grade/Year">
+            <div class="invalid-feedback">
+              Please provide your school year/grade.
+            </div>
           </div>
         </div>
         <label for=""> When would you like to start your study abroad?</label>
@@ -58,33 +76,39 @@
           <div class="form-group col-md-6">
           <label for="inputStartYear">Year</label>
           <input type="text" class="form-control" required="true" name="inputStartYear" id="inputStartYear" placeholder="">
+          <div class="invalid-feedback">
+            Please provide a valid year you would like to begin study abroad.
+          </div>
         </div>
         <div class="form-group col-md-6">
           <label for="inputStartMonth">Month</label>
           <input type="text" class="form-control" required="true" name="inputStartMonth" id="inputStartMonth" placeholder="">
+          <div class="invalid-feedback">
+            Please provide a valid month you would like to begin study abroad.
+          </div>
         </div>
         </div>
-        <label for="studyLength">How long would you like to study abroad?</label>
+        <label for="studyLength">How long would you like to study abroad? Please select at least one.</label>
         <div class="form-row border rounded">
           <div class="form-group w-100">
-            <div class="form-check form-check-inline mt-3">
-              <div class="checkbox" required="true" id="inputDuration">
-                <label><input type="checkbox" name="inputDuration" value="radioYear">   Year</label>
+            <div class="form-check form-check-inline mt-3" id="inputDuration">
+              <div class="checkbox" required="true" >
+                <label><input type="checkbox" name="inputDuration" value="Year">   Year</label>
               </div>
               <div class="checkbox">
-                <label><input type="checkbox" name="inputDuration" value="radioSemester">   Semester</label>
+                <label><input type="checkbox" name="inputDuration" value="Semester">   Semester</label>
               </div>
               <div class="checkbox">
-                <label><input type="checkbox" name="inputDuration" value="radioShortTerm">   Short Term</label>
+                <label><input type="checkbox" name="inputDuration" value="ShortTerm">   Short Term</label>
               </div>
               <div class="checkbox">
-                <label><input type="checkbox" name="inputDuration" value="radioSummer">   Summer Program</label>
+                <label><input type="checkbox" name="inputDuration" value="Summer">   Summer Program</label>
               </div>
             </div>
           </div>
         </div>
         
-        <label for="schoolsSelect">Which country are you interested in?</label>
+        <label for="schoolsSelect">Which country are you interested in? Please select at least one.</label>
         <div class="form-row border rounded">
           <div class="form-group w-100">
           <div class="form-check form-check-inline mt-3" >
@@ -103,6 +127,9 @@
         <div class="form-group mt-4">
           <label for="aboutInfo">Tell us more about yourself! Please include any specific schools or regions you are interested in.</label>
           <textarea class="form-control" required="true" name="aboutInfo" id="aboutInfo" rows="3" placeholder="About You"></textarea>
+          <div class="invalid-feedback">
+            Please provide some additional information about you! This can include anything you think will help find your perfect school.
+          </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
