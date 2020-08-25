@@ -63,7 +63,24 @@ function openSubArea(evt, areaName) {
 $(".closeBtn").click(function(){
   $(".accordionShow").hide();
   $(window).off('scroll.fixMe');
+  var divToFind = $(this).parents('.countryCard').first();
+  $(divToFind)[0].scrollIntoView(true);
+  // document.getElementById(idToFind).scrollTop += 140;
+  // scrollToTargetAdjusted(idToFind)
 })
+
+function scrollToTargetAdjusted(elId){
+  var element = document.getElementById(elId);
+  var headerOffset = 45;
+  var elementPosition = element.getBoundingClientRect().top;
+  console.log(elementPosition)
+  var offsetPosition = elementPosition - headerOffset;
+
+  window.scrollTo({
+       top: offsetPosition,
+       behavior: "smooth"
+  });
+}
 
 //Load and play videos on click instead of on page load
 var video_wrapper = $('.video-container');
