@@ -535,6 +535,42 @@ a.nav-link:hover {
   display: none;
 }
 
+/* Confirmation popup on form page */
+#confirm {
+  /* display: none; */
+  background-color: #0a3170;
+  color: white;
+  border: 1px solid #e9ecef;
+  position: fixed;
+  width: 55%;
+  height: 35%;
+  left: 25%;
+  top: 20%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#confirm h2 {
+  color: white;
+  margin-top: 5%;
+}
+
+#confirm p {
+  font-size: 1em;
+}
+
+#confirm button {
+  border: 1px solid white;
+}
+
+#confirm button a{
+  color: white;
+}
+/* #confirm .message {
+  text-align: left;
+} */
+
+
 /* Responsive styles/media queries not handled by Bootstrap/Flex */
 @media screen and (max-width: 550px) {
   .directLinks iframe {
@@ -571,6 +607,19 @@ a.nav-link:hover {
   .accordionShow .flex-half {
     display: block;
   }
+
+  #confirm {
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 7%;
+    padding: 5%; 
+  }
+
+  #confirm button {
+    margin-bottom: 2%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -582,26 +631,3 @@ a.nav-link:hover {
 
 
 
-#confirm {
-  display: none;
-  background-color: #0a3170;
-  color: white;
-  border: 1px solid #0a3170;
-  position: fixed;
-  width: 60%;
-  height: 35%;
-  left: 22%;
-  top: 20%;
-  box-sizing: border-box;
-  text-align: center;
-}
-#confirm button {
-  border: 1px solid white;
-}
-
-#confirm button a{
-  color: white;
-}
-/* #confirm .message {
-  text-align: left;
-} */
