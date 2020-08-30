@@ -10,7 +10,7 @@ exports.buildMail = function(dataFromRoute){
   let emailToSend = {
     rejectUnauthorized:false,
     from: "studyabroaddevelopment@gmail.com", // sender address
-    to: "studyabroaddevelopment@gmail.com", "alexandra@studyabroadnetwork.net", // list of receivers
+    to: "alexandra@studyabroadnetwork.net", // list of receivers
     subject: "New Inquiry From " + dataFromRoute.inputLastName +", " + dataFromRoute.inputFirstName, // Subject line
     text: "Test Text", // plain text body
     html: builtHtml // html body
