@@ -535,6 +535,26 @@ a.nav-link:hover {
   display: none;
 }
 
+.red-text {
+  color: #ae132b;
+}
+.invalid-feedback {
+  color: #ae132b;
+  font-size: 100%;
+}
+.form-group.mt-4 {
+  font-size: 100%;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  border-color: #ae132b; 
+}
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+  border-color: #ae132b;
+  box-shadow: 0 0 0 0.2rem rgba(174, 19, 43,.25);
+}
+form small {
+  font-size: 100% !important;
+}
 /* Confirmation popup on form page */
 #confirm {
   display: none;
