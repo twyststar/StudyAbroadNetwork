@@ -2,7 +2,7 @@
 
 League Spartan
 =============
-_by [Micah Rich](https://micahrich.com), [Caroline Hadilaksono](https://www.hadilaksono.com), and [Tyler Finck](https://www.sursly.com)_
+_by [Micah Rich](http://micahrich.com), [Caroline Hadilaksono](http://www.hadilaksono.com), and [Tyler Finck](http://www.sursly.com)_
 
 **A new classic, this is a bold, modern, geometric sans-serif that has no problem kicking its enemies in the chest.** 
 
@@ -10,8 +10,8 @@ Taking a strong influence from ATF's classic Spartan family, we're starting our 
 
 - - -
 
-_In addition, the incredible [Philip von Borries](https://www.vaubee.com) has crafted a beautiful and detailed animated version of League Spartan to accompany the release – partnering with [Animography.net](https://animography.net/products/league-spartan) to expand on it and sell it._
+_In addition, the incredible [Philip von Borries](http://www.vaubee.com) has crafted a beautiful and detailed animated version of League Spartan to accompany the release – partnering with [Animography.net](http://animography.net/products/league-spartan) to expand on it and sell it._
 
 _It's simple and beautiful, and makes some extremely complex, very compelling typographic animations quickly._
 
-_And part of the profits are going right back into supporting The League and making more great stuff, so if you love it, [grab a license today](https://animography.net/products/league-spartan)._
+_And part of the profits are going right back into supporting The League and making more great stuff, so if you love it, [grab a license today](http://animography.net/products/league-spartan)._

@@ -16368,7 +16368,7 @@ seven = "-2";
 };
 };
 manufacturer = "The League of Moveable Type";
-manufacturerURL = "https://www.theleagueofmoveabletype.com";
+manufacturerURL = "http://www.theleagueofmoveabletype.com";
 unitsPerEm = 1000;
 userData = {
 GSDimensionPlugin.Dimensions = {

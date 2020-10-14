@@ -15,11 +15,6 @@ app.use(express.static(path.resolve("./public")));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// app.use(function(req, res, next) {
-//   res.setHeader("Content-Security-Policy", "img-src 'self' https://www.studyabroadnetwork.net");
-//   return next();
-// });
-
 app.get('/', (req, res) => {
   res.render('pages/index',
   {

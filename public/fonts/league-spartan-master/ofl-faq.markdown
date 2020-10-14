@@ -1,4 +1,4 @@
-	Version 1.1-update2 - 23 August 2010 | (See https://scripts.sil.org/OFL for updates)
+	Version 1.1-update2 - 23 August 2010 | (See http://scripts.sil.org/OFL for updates)
 
 Frequently Asked Questions
 ==================================================================
@@ -59,7 +59,7 @@ Contents of This FAQ
 >> Yes. If the fonts are transferred from the server to the client computer by means that allow them to be used even if the computer is no longer attached to the network, the full package (copyright notices, licensing information, etc.) should be included.
 
 ### 1.10  Does the full OFL license text always need to accompany the font?
->> The only situation in which an OFL font can be distributed without the text of the OFL (either in a separate file or in font metadata), is when a font is embedded in a document or bundled within a program. In the case of metadata included within a font, it is legally sufficient to include only a link to the text of the OFL on https://scripts.sil.org/OFL, but we strongly recommend against this. Most modern font formats include metadata fields that will accept the full OFL text, and full inclusion increases the likelihood that users will understand and properly apply the license.
+>> The only situation in which an OFL font can be distributed without the text of the OFL (either in a separate file or in font metadata), is when a font is embedded in a document or bundled within a program. In the case of metadata included within a font, it is legally sufficient to include only a link to the text of the OFL on http://scripts.sil.org/OFL, but we strongly recommend against this. Most modern font formats include metadata fields that will accept the full OFL text, and full inclusion increases the likelihood that users will understand and properly apply the license.
 
 ### 1.11  What do you mean by 'embedding'? How does that differ from other means of distribution?
 >> By 'embedding' we mean inclusion of the font in a document or file in a way that makes extraction (and redistribution) difficult or clearly discouraged. In many cases the names of embedded fonts might also not be obvious to those reading the document, the font data format might be altered, and only a subset of the font - only the glyphs required for the text - might be included. Any other means of delivering a font to another person is considered 'distribution', and needs to be accompanied by any copyright notices and licensing information available in OFL.txt.
@@ -165,7 +165,7 @@ Contents of This FAQ
 >> We won't do the work for you. We can, however, try to answer your questions, unfortunately we do not have the resources to review and check your font packages for correct use of the OFL.
 
 ### 4.4  Will you distribute my OFL font for me?
->> No, although if the font is of sufficient quality and general interest we may include a link to it on our partial list of OFL fonts on the OFL web site. You may wish to consider other open font catalogs or hosting services, such as the Unifont Font Guide (https://unifont.org/fontguide), The League of Movable Type (https://theleagueofmovabletype.com), Kernest (https://kernest.com/) or the Open Font Library (https://openfontlibrary.org/), which despite the name has no direct relationship to the OFL or SIL. We do not endorse any particular catalog or hosting service - it is your responsibility to determine if the service is right for you.
+>> No, although if the font is of sufficient quality and general interest we may include a link to it on our partial list of OFL fonts on the OFL web site. You may wish to consider other open font catalogs or hosting services, such as the Unifont Font Guide (http://unifont.org/fontguide), The League of Movable Type (http://theleagueofmovabletype.com), Kernest (http://kernest.com/) or the Open Font Library (http://openfontlibrary.org/), which despite the name has no direct relationship to the OFL or SIL. We do not endorse any particular catalog or hosting service - it is your responsibility to determine if the service is right for you.
 
 ### 4.5  Why should I use the OFL for my fonts?
 >> - to meet needs for fonts that can be modified to support minority languages
@@ -264,7 +264,7 @@ Contents of This FAQ
 ===============================
 
 ### 8.1  I see that this is version 1.1 of the license. Will there be later changes?
->> Version 1.1 is the first minor revision of the OFL. We are confident that version 1.1 will meet most needs, but are open to future improvements. Any revisions would be for future font releases, and previously existing licenses would remain in effect. No retroactive changes are possible, although the Copyright Holder(s) can re-release the font under a revised OFL. All versions will be available on our web site: https://scripts.sil.org/OFL.
+>> Version 1.1 is the first minor revision of the OFL. We are confident that version 1.1 will meet most needs, but are open to future improvements. Any revisions would be for future font releases, and previously existing licenses would remain in effect. No retroactive changes are possible, although the Copyright Holder(s) can re-release the font under a revised OFL. All versions will be available on our web site: http://scripts.sil.org/OFL.
 
 ### 8.2  Does this license restrict the rights of the Copyright Holder(s)?
 >> No. The Copyright Holder(s) still retain(s) all the rights to their creation; they are only releasing a portion of it for use in a specific way. For example, the Copyright Holder(s) may choose to release a 'basic' version of their font under the OFL, but sell a restricted 'enhanced' version. Only the Copyright Holder(s) can do this.
@@ -284,7 +284,7 @@ Contents of This FAQ
 
 >> - Put the following disclaimer in both English and the target language stating clearly that the translation is unofficial:
 
->> "This is an unofficial translation of the SIL Open Font License into `<language_name>`. It was not published by SIL International, and does not legally state the distribution terms for fonts that use the OFL. A release under the OFL is only valid when using the original English text. However, we recognize that this unofficial translation will help users and designers not familiar with English to better understand and use the OFL. We encourage designers who consider releasing their creation under the OFL to read the OFL-FAQ in their own language if it is available. Please go to https://scripts.sil.org/OFL for the official version of the license and the accompanying OFL-FAQ."
+>> "This is an unofficial translation of the SIL Open Font License into `<language_name>`. It was not published by SIL International, and does not legally state the distribution terms for fonts that use the OFL. A release under the OFL is only valid when using the original English text. However, we recognize that this unofficial translation will help users and designers not familiar with English to better understand and use the OFL. We encourage designers who consider releasing their creation under the OFL to read the OFL-FAQ in their own language if it is available. Please go to http://scripts.sil.org/OFL for the official version of the license and the accompanying OFL-FAQ."
 
 >> - Keep your unofficial translation current and update it at our request if needed, for example if there is any ambiguity which could lead to confusion.  
 
@@ -300,9 +300,9 @@ Contents of This FAQ
 >> The ability to read, write, type and publish in one's own language is one of the most critical needs for millions of people around the world. This requires fonts that are widely available and support lesser-known languages. SIL develops - and encourages others to develop - a complete stack of writing systems implementation components available under open licenses. This open stack includes input methods, smart fonts, smart rendering libraries and smart applications. There has been a need for a common open license that is specifically applicable to fonts and related software (a crucial component of this stack), so SIL developed the SIL Open Font License with the help of the Free/Libre and Open Source Software community.
 
 ### 9.3  How can I contact SIL?
->> Our main web site is: https://www.sil.org/
-Our site about complex scripts is: https://scripts.sil.org/
-Information about this license (and contact information) is at: https://scripts.sil.org/OFL
+>> Our main web site is: http://www.sil.org/
+Our site about complex scripts is: http://scripts.sil.org/
+Information about this license (and contact information) is at: http://scripts.sil.org/OFL
 
 
 ## Acknowledgements
@@ -311,7 +311,7 @@ Information about this license (and contact information) is at: https://scripts.
 	
 		N: Micah Rich  
 		E: micah@micahrich.com  
-		W: https://www.theleagueofmoveabletype.com  
+		W: http://www.theleagueofmoveabletype.com  
 	
 	- The League of Moveable Type is an open-source font foundry, working to make the world of typography a better place.
 
