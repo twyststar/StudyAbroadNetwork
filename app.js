@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // app.use(function(req, res, next) {
-//   res.setHeader("Content-Security-Policy", "img-src 'self' http://www.studyabroadnetwork.net");
+//   res.setHeader("Content-Security-Policy", "img-src 'self' https://www.studyabroadnetwork.net");
 //   return next();
 // });
 
