@@ -63,6 +63,12 @@ app.get('/contact', (req, res) => {
     page_title: "contact"
   });
 });
+app.get('/covid', (req, res) => {
+  res.render('pages/covid',
+  {
+    page_title: 'covid'
+  });
+});
 
 app.post("/contact", (req, res) => {
   mailer.buildMail(req.body).then(function(err, reply){

@@ -183,6 +183,20 @@ a.nav-link:hover {
   color: white;
 }
 
+.covid-info {
+  height: 35px;
+  width: 100%;
+  background-color: gold;
+  color: black;
+  text-align: center;
+  padding: .5%;
+}
+
+.covid-info a p{
+  color: black;
+  vertical-align: middle;
+}
+
 .flex-half {
   display: flex;
   flex-direction: row;
@@ -306,6 +320,12 @@ a.nav-link:hover {
 
 /*Icon/image styles */
 
+.flag-icon {
+  color: #0a3170;
+}
+.contentPadded .flag-icon {
+  text-align: center;
+}
 .smallIcon {
   width: 5%;
   height: auto;

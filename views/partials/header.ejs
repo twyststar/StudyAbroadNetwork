@@ -40,6 +40,11 @@
         </ul>
       </div>
     </nav>
+    <% if (page_title != 'covid') { %>
+      <div class="covid-info">
+        <a href='covid'><p>Click here for important information on Covid-19</p></a>
+      </div>
+    <% } %>
 </div>
 <div class="headerScroll">
   <nav class="navbar navbar-expand-lg static-top">
@@ -86,4 +91,9 @@
       </div>
     </div>
   </nav>
+  <% if (page_title != 'covid') { %>
+    <div class="covid-info">
+      <a href='covid'><p>Click here for important information on Covid-19</p></a>
+    </div>
+  <% } %>
 </div>
