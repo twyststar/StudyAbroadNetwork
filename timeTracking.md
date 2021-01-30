@@ -60,10 +60,11 @@
 | 08-25-20      | 1             |
 | 08-30-20      | 2 - complete  |
 | 09-14-20      | 1 - research  |
-|       |   |
-|       |   |
-|       |   |
-| *Total*       |            60 |
+| 10-15-20      | 2             |
+| 10-16-20      | 1             |
+| 12-06-20      |              |
+|               |               |
+| *Total*       |            63 |
 
 
 
@@ -73,7 +74,7 @@
 * Because of the above, I will build out a nodeJS service that will run separately to handle parsing form input and sending out an email. (An API)
 * Current plan is to use NodeMailer and heroku.
 
-_Current status - local api has successfully delivered a test email._
+_Current status - local api has successfully delivered a test email_
 
 * Need to build out form, format email, and connect the information to the api.
 * Need to push API live after the above
