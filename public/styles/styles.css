@@ -323,7 +323,7 @@ a.nav-link:hover {
 .flag-icon {
   color: #0a3170;
 }
-.contentPadded .flag-icon {
+.contentP{
   text-align: center;
 }
 .smallIcon {

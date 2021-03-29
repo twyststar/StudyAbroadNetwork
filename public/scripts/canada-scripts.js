@@ -10,7 +10,6 @@ var scrollFix = function(fixNode){
     elementOffset = $(fixNode).offset().top,
     distance = (elementOffset - scrollTop);
     if(distance <= 100){
-      console.log('hit the header')
       $(fixNode).css({ 
         'position': 'fixed',
         'top': '40px',
@@ -19,9 +18,11 @@ var scrollFix = function(fixNode){
         'text-align': 'center',
         'width': '77%'
       });
+      $(fixNode).parent().css({'padding-top':'25%'});
     }  
     if (currentScroll < setOriginal){
       $(fixNode).attr('style','position:relative');
+      $(fixNode).parent().css({'padding-top':'2%'});
     }
   });
 }
