@@ -18,9 +18,11 @@ var scrollFix = function(fixNode){
         'text-align': 'center',
         'width': '90%'
       });
+      $(fixNode).parent().css({'padding-top':'25%'});
     } 
     if (currentScroll < setOriginal){
       $(fixNode).attr('style','position:relative');
+      $(fixNode).parent().css({'padding-top':'2%'});
     }
   });
 }
