@@ -68,8 +68,9 @@
 | 02-12-21      | 1             |
 | 03-07-21      | 1             |
 | 03-28-21      | 3             |
+| 04-09-21      | 2             |
 |               |               |
-| *Total*       |            72 |
+| *Total*       |            74 |
 
 
 
@@ -115,35 +116,3 @@ _Current status - local api has successfully delivered a test email_
 * Find cools ways to create a 'favorite' or 'compare' list of schools/districts - _this would be a big project, likely requiring a pretty large refactor_
 
 * If db implemented, create admin dashboard for ease of information visibility - _this would be a separate app, for Aunt Alex's use, connected to the database_
-
-
-# 2,
-# 2,
-# 4,
-# 7,
-# 4,
-# 4,
-# 4,
-# 6,
-# 2,
-# 2,
-# 2,
-# 2,
-# 1,
-# 3,
-# 2,
-# 2,
-# 3,
-# 1,
-# 3,
-# 1,
-# 2,
-# 1,
-# 2,
-# 1,
-# 2,
-# 1,
-# 1,
-# 1,
-# 1,
-# 3
